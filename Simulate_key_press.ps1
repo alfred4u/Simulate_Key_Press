@@ -10,7 +10,9 @@ $wsh = New-Object -ComObject WScript.Shell
 while (1) {
   Clear-Host
   $wsh.SendKeys($button)
-  Write-Host "`n`n`n"
-  Write-Host "Keep alive my PC ..." -ForegroundColor (Get-random $color) -BackgroundColor (Get-random $color)
+  Write-Host "`n`n`n`n`tKeep alive my PC ..." `
+        -ForegroundColor (Get-random $color) `
+        -BackgroundColor (Get-random $color)
+        
   Start-Sleep -seconds $time
 }
